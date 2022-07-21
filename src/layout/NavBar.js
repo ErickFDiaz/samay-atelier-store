@@ -1,4 +1,5 @@
 // import { Fragment } from "react";
+import CartWidget from "./CartWidget"
 
 const NavBar = () => {
     return (
@@ -21,10 +22,16 @@ const NavBar = () => {
                                 <a className="nav-link" href="#">Contacto</a>
                             </li>
                         </ul>
-                        <form className="d-flex" role="search">
+                        <div className="d-flex pe-3">
+                            <CartWidget />
+
+                        </div>
+                        {/* <form className="d-flex" role="search">
                             <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
                                 <button className="btn btn-outline-light" type="submit">Buscar</button>
-                        </form>
+                        </form> */}
+
+
                     </div>
                 </div>
             </nav>

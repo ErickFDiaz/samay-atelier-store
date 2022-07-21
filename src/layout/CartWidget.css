@@ -1,0 +1,13 @@
+.cart-container:hover{
+    cursor: pointer;
+}
+.cart-counter{
+    position: absolute;
+    padding: 0.10rem 0.50rem;
+    top:10px;
+    right: 10px;
+    color: white;
+    border: 1px;
+    background-color: red;
+    border-radius: 100%;
+}
