@@ -2,7 +2,7 @@ import './ItemListContainer.css';
 import ItemCount from '../components/ItemCount'
 import ItemList from '../components/ItemList';
 
-import { data } from '../mocks/productsMock';
+import getProducts from '../mocks/productsMock';
 
 import { useEffect, useState } from 'react';
 
@@ -18,7 +18,7 @@ const ItemListContainer = (props) => {
 
     useEffect(() => {
         console.log("I'm the useEffect");
-        data
+        getProducts
         .then((res)=>{
             setProductsList(res)
         })
@@ -31,7 +31,10 @@ const ItemListContainer = (props) => {
 
 
     return (
-        <>
+        <>  
+            <div className='d-flex' style={{height:'100vh'}}>
+
+            </div>
             <h2 className="greeting">{props.greeting}</h2>
             <ItemList productsList={productsList}/>
 

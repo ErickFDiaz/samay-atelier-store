@@ -25,7 +25,7 @@ const products = [{
     "pictureUrl": "http://dummyimage.com/250x250.png/dddddd/000000"
 }]
 
-export const data = new Promise((resolve, reject) => {
+ const getProducts = new Promise((resolve, reject) => {
 
     let condition = true
     setTimeout(() => {
@@ -37,3 +37,4 @@ export const data = new Promise((resolve, reject) => {
     }, 2000)
 })
 
+export default getProducts
