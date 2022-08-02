@@ -2,7 +2,8 @@ const product = {
     "id": 1,
     "title": "Floating Clouds  (Ukigumo)",
     "price": 55.69,
-    "pictureUrl": "http://dummyimage.com/250x250.png/ff4444/ffffff"
+    "pictureUrl": "http://dummyimage.com/500x500.png/ff4444/ffffff",
+    "descriptionList": ['Producto personalizado','Hecho a medida','Puedes elegir el color']
 }
  const getProduct = new Promise((resolve, reject) => {
 
