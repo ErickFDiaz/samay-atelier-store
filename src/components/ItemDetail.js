@@ -1,7 +1,7 @@
 import React from 'react'
 
 const ItemDetail = ({ item }) => {
-    const {title,pictureUrl,price} = item
+    const {title,pictureUrl,price,description} = item
     return (
         <>
             <div className='container-fluid mb-3'>
@@ -13,6 +13,7 @@ const ItemDetail = ({ item }) => {
                         <h1 className='fs-3 fw-bold'>{title}</h1>
                         <h6 className='fs-1 fw-bold'>S/. {price}</h6>
                         <p className='text-primary'>Ver los medios de pago</p>
+                        <p>{description}</p>
                         {/* <h4>Descripción: </h4> */}
                         {/* <ul>
                             {(descriptionList).map((listItem)=><li key={listItem}>{listItem}</li>)}

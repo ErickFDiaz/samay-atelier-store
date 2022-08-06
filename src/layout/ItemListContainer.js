@@ -5,16 +5,20 @@ import ItemList from '../components/ItemList';
 import getProducts from '../mocks/productsMock';
 
 import { useEffect, useState } from 'react';
-
+import { useParams } from 'react-router-dom'
 
 
 
 const ItemListContainer = (props) => {
+const {category} = useParams()
+
     const [productsList, setProductsList] = useState([])
 
     // const onAdd = (cantidad) => {
     //     console.log(`Agregaste al carrito ${cantidad} productos`);
     // }
+
+    
 
     console.log('Mounted!');
 
@@ -34,7 +38,7 @@ const ItemListContainer = (props) => {
             .catch((error) => {
                 setProductsList('Hubo un error')
             })
-    }, [])
+    }, [category])
 
     console.log(productsList);
 
