@@ -7,6 +7,8 @@ import getProducts from '../mocks/productsMock';
 import { useEffect, useState } from 'react';
 
 
+
+
 const ItemListContainer = (props) => {
     const [productsList, setProductsList] = useState([])
 
@@ -20,7 +22,14 @@ const ItemListContainer = (props) => {
         console.log("I'm the useEffect");
         getProducts
             .then((res) => {
+                if(category){
+                    setProductsList(
+                        res.filter(product => product.category === category)
+                    )
+                }else{
                 setProductsList(res)
+
+                }
             })
             .catch((error) => {
                 setProductsList('Hubo un error')
@@ -35,7 +44,12 @@ const ItemListContainer = (props) => {
             <div className='container-fluid'>
                 <div className='row'>
                     <h2 className="greeting">{props.greeting}</h2>
+                    {productsList.length!==0?(
                     <ItemList productsList={productsList} />
+
+                    ):(
+                        <h1>Cargando Productos ...</h1>
+                    )}
                 </div>
             </div>
 

@@ -3,13 +3,21 @@ import NavBar from './layout/NavBar';
 import ItemListContainer from './layout/ItemListContainer';
 import ItemDetailContainer from './layout/ItemDetailContainer'
 // import './App.css';
+import {Routes ,Route} from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <ItemListContainer greeting='Bienvenidos a Samay Store' />
-      <ItemDetailContainer/>
+      {/* <NavBar />
+      
+      <ItemDetailContainer/> */}
+      <Routes>
+        <Route path='/' element={<ItemListContainer greeting='Bienvenidos a Samay Store' />}></Route>
+        <Route path='/item/:id' element={<ItemDetailContainer/>}></Route>
+        <Route path='/category/:category' element={<ItemListContainer greeting='Bienvenidos a Samay Store' />}></Route>
+        <Route path='/about' element={<h1>About</h1>}></Route>
+        <Route path='*' element={<ItemDetailContainer/>}></Route>
+      </Routes>
     </div>
   );
 }
