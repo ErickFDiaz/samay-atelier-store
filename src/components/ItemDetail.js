@@ -1,7 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import ItemCount from './ItemCount'
 
 const ItemDetail = ({ item }) => {
-    const {title,pictureUrl,price,description} = item
+    const {title,pictureUrl,price,description, stock} = item
+    const navigate = useNavigate()
+    const [count, setCount] = useState(0)
+    const onAdd = (quantityToAdd) => {
+        console.log(`You just added ${quantityToAdd} products to your cart`)
+        setCount(quantityToAdd)
+        console.log(count)
+
+        navigate('../../Cart')
+    }
     return (
         <>
             <div className='container-fluid mb-3'>
@@ -18,7 +29,8 @@ const ItemDetail = ({ item }) => {
                         {/* <ul>
                             {(descriptionList).map((listItem)=><li key={listItem}>{listItem}</li>)}
                         </ul> */}
-                        <button className='btn btn-primary'>Comprar</button>
+                        {/* <button className='btn btn-primary'>Comprar</button> */}
+                        <ItemCount initial={1} stock={stock} onAdd={onAdd}  />
                     </div>
                 </div>
             </div>
