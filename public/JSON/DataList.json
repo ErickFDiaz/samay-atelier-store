@@ -5,9 +5,8 @@
     "price": 55.69,
     "pictureUrl": "http://dummyimage.com/500x500.png/ff4444/ffffff",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quia architecto enim eius repudiandae ipsam, obcaecati accusamus alias atque, eligendi illum quam! Voluptate quaerat quas quos id autem, dolorem inventore!",
-    "stock":10,
+    "stock": 10,
     "category": "Pelicula"
-
   },
   {
     "id": 2,
@@ -15,8 +14,8 @@
     "price": 68.83,
     "pictureUrl": "http://dummyimage.com/500x500.png/cc0000/ffffff",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quia architecto enim eius repudiandae ipsam, obcaecati accusamus alias atque, eligendi illum quam! Voluptate quaerat quas quos id autem, dolorem inventore!",
-    "stock":10
-    
+    "stock": 10,
+    "category": "Documental"
   },
   {
     "id": 3,
@@ -24,7 +23,8 @@
     "price": 58.31,
     "pictureUrl": "http://dummyimage.com/500x500.png/cc0000/ffffff",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quia architecto enim eius repudiandae ipsam, obcaecati accusamus alias atque, eligendi illum quam! Voluptate quaerat quas quos id autem, dolorem inventore!",
-    "stock":10
+    "stock": 10,
+    "category": "Serie"
   },
   {
     "id": 4,
@@ -32,8 +32,8 @@
     "price": 62.69,
     "pictureUrl": "http://dummyimage.com/500x500.png/5fa2dd/ffffff",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quia architecto enim eius repudiandae ipsam, obcaecati accusamus alias atque, eligendi illum quam! Voluptate quaerat quas quos id autem, dolorem inventore!",
-    "stock":10
-
+    "stock": 10,
+    "category": "Pelicula"
   },
   {
     "id": 5,
@@ -41,6 +41,7 @@
     "price": 45.85,
     "pictureUrl": "http://dummyimage.com/500x500.png/dddddd/000000",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quia architecto enim eius repudiandae ipsam, obcaecati accusamus alias atque, eligendi illum quam! Voluptate quaerat quas quos id autem, dolorem inventore!",
-    "stock":10
+    "stock": 10,
+    "category": "Serie"
   }
 ]

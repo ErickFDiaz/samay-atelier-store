@@ -10,7 +10,7 @@ const CartWidget = () => {
     console.log('Cantidad en el carrito', quantityInCart);
     return (
     <Link to={'/cart'}>
-        <div className="cart-container">
+        <div className="cart-container" style={{ display: quantityInCart === 0? 'none': 'block'}}>
             <GrCart style={{fontSize: 35 }}/>
             <span className='cart-counter'>{quantityInCart}</span>
         </div>

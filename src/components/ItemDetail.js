@@ -2,6 +2,8 @@ import React, { useContext, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { CartContext } from '../context/CartContext'
 import ItemCount from './ItemCount'
+import { Link } from "react-router-dom"
+
 // import {addToCart} from ''
 
 const ItemDetail = ({ item }) => {
@@ -31,8 +33,15 @@ const ItemDetail = ({ item }) => {
                         <h6 className='fs-1 fw-bold'>S/. {price}</h6>
                         <p className='text-primary'>Ver los medios de pago</p>
                         <p>{description}</p>
-
-                        <ItemCount initial={1} stock={stock} onAdd={onAdd} />
+                        {
+                            count ? (
+                                <Link to='../Cart' >
+                                    <button className='btn btn-success'>Terminar Compra</button>
+                                </Link>
+                            ) : (
+                                <ItemCount initial={1} stock={stock} onAdd={onAdd} />
+                            )
+                        }
                     </div>
                 </div>
             </div>

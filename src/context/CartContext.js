@@ -47,13 +47,22 @@ const CartProvider = ({ children }) => {
         return quantityProducts
     }
 
+    const totalAmount = () => {
+        let total = 0
+        for (const product of cart) {
+            total = total + (product.price * product.quantity)
+        }
+        return total
+    }
+
     const valuesToShare = {
         cart,
         // isInCart,
         cleanCart,
         addToCart,
         removeFromCart,
-        quantityInCart: quantityInCart()
+        quantityInCart: quantityInCart(),
+        totalAmount: totalAmount()
     }
 
     return (
