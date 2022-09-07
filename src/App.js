@@ -7,6 +7,19 @@ import { Routes, Route } from 'react-router-dom'
 import Cart from './components/Cart';
 import CartProvider from './context/CartContext';
 
+import {initializeApp} from 'firebase/app'
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAXl_S_4Q5ytejIeQXlIzv93wJlce2i-9g",
+  authDomain: "samay-atelier.firebaseapp.com",
+  projectId: "samay-atelier",
+  storageBucket: "samay-atelier.appspot.com",
+  messagingSenderId: "556659839398",
+  appId: "1:556659839398:web:92e4dd6cce439932217f67"
+};
+
+initializeApp(firebaseConfig)
+
 function App() {
   return (
     <div className="App">

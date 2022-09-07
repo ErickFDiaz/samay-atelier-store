@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+// import { useNavigate } from 'react-router-dom'
 import { CartContext } from '../context/CartContext'
 import ItemCount from './ItemCount'
 import { Link } from "react-router-dom"
@@ -9,7 +9,7 @@ import { Link } from "react-router-dom"
 const ItemDetail = ({ item }) => {
     const { title, pictureUrl, price, description, stock } = item
 
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
     const [count, setCount] = useState(0)
     const { addToCart } = useContext(CartContext)
 
@@ -26,7 +26,7 @@ const ItemDetail = ({ item }) => {
             <div className='container-fluid mb-3'>
                 <div className='row'>
                     <div className='col-6'>
-                        <img src={pictureUrl} className="rounded mx-auto d-block" alt="..." />
+                        <img src={pictureUrl} className="rounded mx-auto d-block" alt="..." style={{height:'500px'}}/>
                     </div>
                     <div className='col-6'>
                         <h1 className='fs-3 fw-bold'>{title}</h1>

@@ -16,13 +16,13 @@ const NavBar = () => {
                                 <Link to={`/`} className="nav-link" aria-current="page">Inicio</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to={`/category/Pelicula`} className="nav-link" aria-current="page">Peliculas</Link>
+                                <Link to={`/category/enterizos-overol`} className="nav-link" aria-current="page">Enterizos y Overols</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to={`/category/Documental`} className="nav-link" aria-current="page">Documentales</Link>
+                                <Link to={`/category/vestidos`} className="nav-link" aria-current="page">Vestidos</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to={`/category/Serie`} className="nav-link" aria-current="page">Series</Link>
+                                <Link to={`/category/blusas`} className="nav-link" aria-current="page">Blusas</Link>
                             </li>
                             <li className="nav-item">
                                 <Link to={`/about`} className="nav-link">Nosotros</Link>
