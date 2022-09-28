@@ -18,6 +18,8 @@ const firebaseConfig = {
   appId: "1:556659839398:web:92e4dd6cce439932217f67"
 };
 
+const hola = 'Hola'
+
 initializeApp(firebaseConfig)
 
 function App() {
